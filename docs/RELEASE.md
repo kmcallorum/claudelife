@@ -130,7 +130,7 @@ Each release creates:
 
 ### 1. GitHub Release
 
-- **Location**: https://github.com/kmcallorum/claudelife/releases
+- **Location**: https://github.com/kmcallorum/pytest-agents/releases
 - **Contains**:
   - Release notes (auto-generated changelog)
   - Git tag (e.g., `v0.2.0`)
@@ -146,7 +146,7 @@ Each release creates:
 
 ### 3. Docker Images
 
-- **Location**: https://ghcr.io/kmcallorum/claudelife
+- **Location**: https://ghcr.io/kmcallorum/pytest-agents
 - **Tags**:
   - `latest`: Most recent release
   - `X.Y.Z`: Specific version (e.g., `0.2.0`)
@@ -156,8 +156,8 @@ Each release creates:
 
 **Pull image:**
 ```bash
-docker pull ghcr.io/kmcallorum/claudelife:latest
-docker pull ghcr.io/kmcallorum/claudelife:0.2.0
+docker pull ghcr.io/kmcallorum/pytest-agents:latest
+docker pull ghcr.io/kmcallorum/pytest-agents:0.2.0
 ```
 
 ## Prerequisites for Publishing
@@ -273,7 +273,7 @@ gh release view v0.2.0
 pip install pytest-agents==0.2.0
 
 # Verify Docker
-docker pull ghcr.io/kmcallorum/claudelife:0.2.0
+docker pull ghcr.io/kmcallorum/pytest-agents:0.2.0
 ```
 
 ## Troubleshooting
@@ -439,7 +439,7 @@ gh run watch
 gh api /user/packages/container/claudelife/versions
 
 # Pull latest
-docker pull ghcr.io/kmcallorum/claudelife:latest
+docker pull ghcr.io/kmcallorum/pytest-agents:latest
 ```
 
 ### PyPI Downloads
